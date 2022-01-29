@@ -11,3 +11,10 @@ EXPOSE 8080
 
 # CMD npm i
 # CMD npm run serve
+
+#1.先build image
+#docker build -t dockervue .
+
+#2.在run container
+#docker run --name dockervue -it -p 8080:8080 -v D:\dockervue:/app dockervue sh
+#sh會開啟command Line 執行npm i && npm run serve
